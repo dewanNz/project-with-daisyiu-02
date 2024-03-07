@@ -15,6 +15,23 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awasome -->
+    <script
+      src="https://kit.fontawesome.com/53087bbf83.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
     <style>
       .font-manrope {
         font-family: "Manrope", sans-serif;
@@ -23,7 +40,42 @@
     <title>Tea house with DaisyUI</title>
   </head>
   <body class="font-manrope">
-    <header></header>
+    <header class="container mx-auto">
+      <!-- banner setting -->
+      <div class="hero min-h-screen bg-base-200">
+        <div class="hero-content">
+          <div>
+            <h1 class="text-7xl font-extrabold">
+              It's good <br />
+              tea time at The <br />
+              Tea House
+            </h1>
+            <p class="py-6 font-medium text-lg">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+          <div>
+            <div>
+              <img
+                src="images/banner.png"
+                class="max-w-sm rounded-lg shadow-2xl"
+              />
+            </div>
+            <div class="flex">
+              <div>
+                <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+              </div>
+              <div>
+                <h2>5.00</h2>
+                <p>Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main></main>
     <footer></footer>
   </body>
